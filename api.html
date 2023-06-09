@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT Simulation</title>
+  <style>
+    .chat-container {
+      height: 300px;
+      overflow: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ChatGPT Simulation</h1>
+  
+  <div class="chat-container">
+    <div id="chat-log"></div>
+  </div>
+  
+  <input type="text" id="user-input" placeholder="Type a message...">
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    // Helper function to create a new chat message element
+    function createChatMessageElement(message, isUser) {
+      const element = document.createElement('p');
+      element.classList.add(isUser ? 'user-message' : 'bot-message');
+      element.textContent = message;
+      return element;
+    }
+
+    // Helper function to append a chat message to the chat log
+    function appendMessageToChatLog(message, isUser) {
+      const chatLog = document.getElementById('chat-log');
+      const messageElement = createChatMessageElement(message, isUser);
+      chatLog.appendChild(messageElement);
+    }
+
+    // Simulate bot response from ChatGPT
+    function simulateBotResponse(userMessage) {
+      // Simulate the response based on user input
+      let botMessage = '';
+
+      // Replace this with your own logic to generate a bot response
+      if (userMessage.toLowerCase().includes('hello')) {
+        botMessage = 'Hello! How can I assist you today?';
+      } else if (userMessage.toLowerCase().includes('weather')) {
+        botMessage = 'Sorry, I am unable to provide weather information at the moment.';
+      } else {
+        botMessage = "I'm sorry, I don't have a response for that.";
+      }
+
+      // Append bot response to the chat log
+      appendMessageToChatLog(botMessage, false);
+    }
+
+    // Send user message and simulate bot response
+    function sendMessage() {
+      const userInput = document.getElementById('user-input');
+      const message = userInput.value;
+      userInput.value = '';
+
+      // Append user message to the chat log
+      appendMessageToChatLog(message, true);
+
+      // Simulate bot response
+      simulateBotResponse(message);
+    }
+  </script>
+</body>
+</html>
