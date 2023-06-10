@@ -16,8 +16,11 @@
     --white-color:#fdfdfd;
     --shadow-color:rgba(0,0,0,.2);
 }
+.abc{
+    color:#032a30;
+}
 .darkMode{
-    --bg-color:#0b061f;
+    --bg-color:#032328;
     --text-color:#fdfdfd;
     --shadow-color:rgba(0,0,0,.7);
 }
@@ -215,7 +218,7 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:black;
+    color:var(--text-color);
     transform:rotate(calc(360deg/4*var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
