@@ -1,4 +1,6 @@
 
+
+
 //menu icon
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -29,6 +31,8 @@ window.onscroll=()=>{
                 document.querySelector('header nav a[href*='+id+']').classList.add('active');
             });
         };
+        //for about readmore to hide while scrolling
+        // document.getElementById("more").style.display='none';
     })
 
 //sticky navbar
@@ -111,3 +115,36 @@ darkModeIcon.onclick = () =>{
     document.body.classList.toggle('darkMode')
 }; 
 
+//readmore on about section
+let readMore = document.querySelector('#ReadMore');
+let dots = document.getElementById("dots");
+let moreText = document.getElementById("more");
+readMore.onclick = () =>{
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        readMore.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+        readMore.href='#about';
+      } else {
+        dots.style.display = "none";
+        readMore.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+        readMore.href='#link';
+      }
+};
+
+
+//contact form
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "janakkhadka6969@gmail.com",
+        Password : "7097E1D5C44067CE0A3B7E43F5EA4007E69D",
+        To : document.getElementById("email").value,
+        From : 'janakkhadka6969@gmail.com',
+        Subject : "new contact form",
+        Body : "Name:"+document.getElementById('fullname').value+"<br> Email:"+document.getElementById("email").value+"<br> Phone:"+document.getElementById("phone").value+"<br> Message:"+document.getElementById("description").value
+    }).then(
+      message => alert(message)
+    );
+}

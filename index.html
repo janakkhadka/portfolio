@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <header class="header">
         <a href="#" class="logo">Janak Khadka</a> 
 
@@ -18,7 +19,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
-            <a href="#service">Service</a>
+            <a href="#skill">Skill</a>
             <a href="#chat-gpt">AI-BOT</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -30,20 +31,22 @@
 
     <!-- home section -->
     <section class="home" id="home">
+        <!-- <audio autoplay loop src="1.mp3"></audio> //background music-->
+         
         <div class="home-content">
             <h3>Hello I am</h3>
             <h1>Janak Khadka</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit eaque repudiandae et saepe ut odit architecto exercitationem, odio aspernatur fugit eligendi laboriosam, ullam a rerum possimus sequi nemo! Voluptates?</p>
-            
+            <p>I am an enthusiastic individual who is passionate about technology. I am driven, adaptable, and eager to take on new challenges. I look forward to the opportunities that lie ahead, as I continue to grow personally and professionally.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-youtube'></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/janakkhadka" target=”_blank”><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/janakkhadka" target=”_blank”><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com/channel/UCQuUVSeYKHF8_aDkGO0j7ew" target=”_blank”><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.facebook.com/janak.khadka8" target=”_blank”><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/janak.khadka8" target=”_blank”><i class='bx bxl-instagram'></i></a>
+                <!-- <a href="#" target=”_blank”><i class='bx bxl-twitter' ></i></a> -->
             </div>
 
-            <a href="#" class="btn">Download CV</a>
+            <a href="janakkhadka-cv.pdf" class="btn" download>Download CV</a>
         </div>
             <div class="profession-container">
                 <div class="profession-box">
@@ -53,7 +56,7 @@
                     </div>
                     <div class="profession" style="--i:1;">
                         <i class='bx bx-video'></i>
-                        <h3>Video Maker</h3>
+                        <h3>Video Creator</h3>
                     </div>
                     <div class="profession" style="--i:2;">
                         <i class='bx bxl-apple'></i>
@@ -86,20 +89,25 @@
         <div class="about-img">
             <img src="2.png" alt="">
             <span class="circle-spin"></span>
+            <span id="link"></span>
         </div>
+        
 
         <div class="about-content">
             
-            <h3>Iam Janak Khadka.</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, illo voluptate eligendi et quo mollitia nihil delectus dolorem quia! 
-                Modi dolore repellat veniam neque? Cum harum ratione placeat excepturi voluptatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quasi. Unde veritatis blanditiis, ipsam sint odio illo est officiis! Officia laudantium ducimus non! Quas explicabo dolorem quos? Omnis, modi assumenda?
-            Distinctio asperiores magnam voluptates aut provident impedit saepe itaque. Eum suscipit culpa odit quasi error debitis, eligendi numquam architecto perferendis nesciunt! Necessitatibus rerum nemo officia doloribus odit quae harum dicta.
-            Facilis ex rem adipisci fugiat consectetur, vero laboriosam tempora recusandae praesentium tempore nam asperiores delectus officiis enim non? Laudantium, nam repudiandae ratione qui alias fuga eveniet nisi ipsum dolore? Placeat.
-            Omnis, consequatur molestiae! Laudantium est sint delectus natus nisi tempore aspernatur aliquid, saepe dolore magnam hic tempora modi quaerat cupiditate eveniet soluta similique impedit. Ab fuga explicabo nihil ullam odio!
-            Culpa ad, ducimus eveniet praesentium cum libero corrupti porro saepe repudiandae, ea unde omnis quod laborum, magni explicabo! Qui voluptate, quae doloremque officiis doloribus culpa ipsum fugiat numquam voluptatum vel!
-            </p>
-             <a href="" class="btn">Read More</a>
+            <h3>Namaste!!!</h3>
+            <p>My name is Janak Khadka. I am 22 years old and I come from Dhankuta, Koshi, Nepal.<br><br>
+
+                In terms of my background, I have always been a curious and eager learner. From a young age, I developed a passion for technology. This interest has shaped my life in numerous ways and continues to drive my personal and professional growth. <br> <br>
+                
+                Academically, I pursued my education at Tribeni Technical School, Dhankuta. These experien<span id="dots">...</span><span id="more">ces have provided me with a strong foundation in tech. area, allowing me to develop a diverse range of skills and knowledge. <br> <br>
+                
+                Throughout my academic journey, I actively sought out opportunities to engage in coding, video editing, photo editing, designing etc. These experiences have helped me cultivate important qualities like teamwork and problem-solving. <br> <br>
+                
+                Aside from my professional pursuits, I am a firm believer in maintaining a healthy work-life balance. In my free time, you can often find me playing,watching football, playing guitar, exploring new local places. These activities not only provide me with a sense of relaxation and fulfillment but also serve as outlets for my creativity and self-expression. <br><br>
+                
+                One of my core values is a commitment to personal growth and lifelong learning. I am constantly seeking out new challenges and opportunities for self-improvement. I believe in the power of continuous learning and embrace it as a means to expand my horizons and contribute positively to the world around me.</span></p>
+             <a class="btn" id="ReadMore">Read More</a>
         </div>
     </section>
 
@@ -122,44 +130,39 @@
             </div>
     </section>
 
-    <!-- service section -->
-    <section class="services" id="service">
-        <h2 class="heading">My <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
+    <!-- service/skill section -->
+    <section class="skill" id="skill">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
                 <i class='bx bx-code-curly'></i>
                 <h3>Web Development</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus voluptatibus, sapiente aliquam ex vel esse obcaecati laboriosam corporis voluptatem nostrum error!
+                <p>I have the basic knowledge of HTML, CSS, Javascript as well as PHP and MySQL. With these languages, I can create dynamic and responsive sites.
                 </p>
-                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="services-box">
+            <div class="skill-box">
                 <i class='bx bx-palette'></i>
                 <h3>UI/UX Designing</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus voluptatibus, sapiente aliquam ex vel esse obcaecati laboriosam corporis voluptatem nostrum error!
+                <p>I love doing designing along with coding/programming. I can play with some designing platform like Figma, Canva. It is really fun doing designing.
                 </p>
-                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="services-box">
+            <div class="skill-box">
                 <i class='bx bxl-apple'></i>
                 <h3>iOS Development</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus voluptatibus, sapiente aliquam ex vel esse obcaecati laboriosam corporis voluptatem nostrum error!
+                <p>As I had the fundamental knowledge of C/C++, learning a Swift language was quiet easier and fun. I like Swift language due to its versatility as we can code for all the Apple product. 
                 </p>
-                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="services-box">
+            <div class="skill-box">
                 <i class='bx bx-video'></i>
-                <h3>Video Making</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus voluptatibus, sapiente aliquam ex vel esse obcaecati laboriosam corporis voluptatem nostrum error!
+                <h3>Video Creation</h3>
+                <p>From the very beginning of my age, I love to capture the scene and make them better by adding some edits and matching sound. 
                 </p>
-                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="services-box">
-                <i class='bx bx-video'></i>
-                <h3>Video Making</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus voluptatibus, sapiente aliquam ex vel esse obcaecati laboriosam corporis voluptatem nostrum error!
+            <div class="skill-box">
+                <i class='bx bx-user-voice'></i>
+                <h3>Communication</h3>
+                <p>I love to connect with more people and having a good communication skills help to connect more people with us. 
                 </p>
-                <a href="#" class="btn">Read More</a>
             </div>
         </div>
     </section>
@@ -168,16 +171,16 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="#" onsubmit="sendEmail(); reset(); return false;">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" id="fullname" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="text" inputmode="numeric" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="text" id="phone" inputmode="numeric" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="description" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -192,5 +195,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
